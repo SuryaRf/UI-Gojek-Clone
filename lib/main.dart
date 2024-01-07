@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gojek_clone/constant/color.dart';
 import 'package:gojek_clone/screen/home_screen/home.dart';
 
 void main() {
@@ -12,10 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Gojek Clone',
       theme: ThemeData(
-        fontFamily: 'Maison Neue Bold',
-        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 0, 255, 21)),
+        fontFamily: 'Poppins',
+        colorScheme: const ColorScheme.light( primary: Color(0xff3A872B)),
         useMaterial3: true,
         
       ),
