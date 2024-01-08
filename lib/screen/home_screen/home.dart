@@ -173,17 +173,341 @@ class HomeScreen extends StatelessWidget {
                   Positioned(
                     left: 29,
                     top: 14,
-                    child: Container(
-                      height: 62,
-                      width: 116,
-                      decoration: BoxDecoration(
-                          color: whiteGojek,
-                          borderRadius: BorderRadius.circular(10)),
+                    child: Stack(
+                      children: [
+                        Container(
+                          height: 62,
+                          width: 116,
+                          decoration: BoxDecoration(
+                            color: whiteGojek,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                        ),
+                        Positioned(
+                            left: 10,
+                            child: Image.asset(
+                              'assets/icon/gopay.png',
+                              height: 30,
+                              width: 20,
+                            )),
+                        Positioned(
+                          top: 4,
+                          left: 35,
+                          child: Text(
+                            'gopay',
+                            style: smallBold,
+                          ),
+                        ),
+                        Positioned(
+                          top: 25,
+                          left: 13,
+                          child: Text(
+                            'Rp9.000.000',
+                            style: smallBold,
+                          ),
+                        ),
+                        Positioned(
+                          top: 41,
+                          left: 13,
+                          child: Text(
+                            'Tap for history',
+                            style: smallBold.copyWith(color: greenGojek),
+                          ),
+                        ),
+                      ],
                     ),
                   )
                 ],
               ),
-            )
+            ),
+            const SizedBox(
+              height: 25,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 23),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(8),
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          color: const Color(0xffE5F9D4),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Image.asset(
+                          'assets/icon/goride.png',
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        'GoRide',
+                        style: small,
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(8),
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          color: const Color(0xffE5F9D4),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Image.asset(
+                          'assets/icon/gocar.png',
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        'GoCar',
+                        style: small,
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(8),
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          color: const Color(0xffFAE3E2),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Image.asset(
+                          'assets/icon/gofood.png',
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        'GoFood',
+                        style: small,
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(8),
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          color: const Color(0xffE5F9D4),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Image.asset(
+                          'assets/icon/gosend.png',
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        'GoSend',
+                        style: small,
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 12,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 23),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(8),
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          color: const Color(0xffFAE3E2),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Image.asset(
+                          'assets/icon/gomart.png',
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        'GoMart',
+                        style: small,
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(8),
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          color: const Color(0xffD8F2F9),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Image.asset(
+                          'assets/icon/gopulsa.png',
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        'GoPulsa',
+                        style: small,
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(8),
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          color: whiteGojek,
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Image.asset(
+                          'assets/icon/goclub.png',
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        'GoClub',
+                        style: small,
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(5),
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          color: const Color(0xffEDEDED),
+                          borderRadius: BorderRadius.circular(25),
+                        ),
+                        child: Image.asset(
+                          'assets/icon/more.png',
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        'More',
+                        style: small,
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            Container(
+              width: 358,
+              height: 60,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                gradient: LinearGradient(
+                  colors: [
+                    const Color(0xffBBE7F0).withOpacity(0.3),
+                    Colors.white
+                  ],
+                ),
+              ),
+              child: Row(
+                children: [
+                  Stack(
+                    children: [
+                      Image.asset('assets/icon/bgstar.png'),
+                      Positioned(
+                        top: 5,
+                        left: 5,
+                        bottom: 5,
+                        child: Image.asset(
+                          'assets/icon/star.png',
+                          height: 45,
+                          width: 45,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 65, top: 12),
+                        child: Text('121 XP to your next treasure', style: smallBold,),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 65, top: 38),
+                        child: SizedBox(
+                          width: 240,
+                          height: 4,
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                left: 0,
+                                top: 0,
+                                child: Container(
+                                  width: 240,
+                                  height: 4,
+                                  decoration: ShapeDecoration(
+                                    color: Color(0xFFBBBBBB),
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(10),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Positioned( 
+                                left: 0,
+                                top: 0,
+                                child: Container(
+                                  width: 156,
+                                  height: 4,
+                                  decoration: ShapeDecoration(
+                                    color: Color(0xFF3B862B),
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(10),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      const Padding(
+                        padding:  EdgeInsets.only(left: 325, top: 15),
+                        child: Icon(Icons.keyboard_arrow_right_outlined, size: 30,),
+                      )
+                    ],
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
