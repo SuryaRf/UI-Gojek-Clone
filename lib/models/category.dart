@@ -11,5 +11,5 @@ class Category {
 List<Category> category =
 [
   Category(title: 'Restos near me', imageAsset: 'assets/icon/gofood.png'),
-  Category(title: 'Best-seller in my area', imageAsset: 'assets/icon/gsofood.png'),
+  Category(title: 'Best-seller in my area', imageAsset: 'assets/icon/gofood.png'),
 ];
